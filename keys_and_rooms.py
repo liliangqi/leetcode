@@ -38,6 +38,7 @@ def solution1(rooms):
     :type rooms: list[list[int]]
     :rtype: bool
     """
+
     visited = {0}
 
     def dfs(i):
@@ -53,7 +54,7 @@ def solution1(rooms):
 
 def main():
 
-    rooms = [[1],[2],[3],[]]
+    rooms = [[1], [2], [3], []]
     result = solution1(rooms)
     print(result)
 
