@@ -53,6 +53,25 @@ def solution2(nums):
     return output
 
 
+def solution3(nums):
+    """
+    Efficient idea from other guy
+    ---
+    :type nums: list[int]
+    :rtype: list[int]
+    """
+    output = []
+    lookup = set()  # Use hashable container to reduce the complexity
+
+    for num in nums:
+        if num in lookup:
+            output.append(num)
+        else:
+            lookup.add(num)
+
+    return output
+
+
 def main():
 
     lst = [4, 3, 2, 7, 8, 2, 3, 1]
